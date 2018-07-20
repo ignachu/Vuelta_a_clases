@@ -11,13 +11,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
   <!--script P5.JS-->
   <script>
-  function setup(){
-    var w = windowWidth-10, h = 380;
-    var canvas = createCanvas(w,h);
+    var img;
+      var y = 0;
+      
+  
+      function setup() {
+    img = loadImage("img/memerapido.jpg");
+          createCanvas(649, 365);
   }
-  function draw(){
-    background(200);
-  }    
+  
+      function draw() {
+    
+      background(img);
+
+noStroke(); 
+    
+          ellipse( mouseX, mouseY, 30, 30); 
+          
+          fill( 162, 7, 63);
+      
+  }   
   </script>
   </body>
 </html>
