@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>La Gran Actuación</title>
+  </head>
+  <body>
+  <!--Bibliotecas P5.JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <!--script P5.JS-->
+  <script>
+  
+     var img;
+      var y = 0;
+      
+  
+      function setup() {
+    img = loadImage("img/neymarsufre.jpg");
+          createCanvas(649, 365);
+  }
+  
+      function draw() {
+    
+      background(img);
+
+noStroke(); ellipse( mouseX, mouseY, 30, 30); fill( 162, 7, 63);
+      
+  }   
+      function mousePressed() {
+          
+          
+      }
+    
+  </script>
+  </body>
+</html>
